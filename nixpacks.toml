@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ['nginx']
-
-[phases.install]
-cmds = [
-  'cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak',
-  'sed -i "/location \//d" /etc/nginx/nginx.conf'
-]
